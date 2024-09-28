@@ -13,9 +13,9 @@ const Banner = () => {
     </>
   );
   return (
-    <div className="bg-gradient-to-r from-sky-300 via-yellow-300 via-green-400 to-cyan-200 p-6">
+    <div className="w-full bg-gradient-to-r from-sky-300 via-yellow-300 via-green-400 to-cyan-200 p-6">
       {/* Navbar Start */}
-      <div className="w-[90%] mx-auto ">
+      <div className="w-full md:w-[90%]  mx-auto ">
         <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
@@ -50,7 +50,7 @@ const Banner = () => {
               <span className="text-6xl mb-3 text-sky-700">
                 <GiSundial />
               </span>{" "}
-              <h1 className="text-6xl font-extrabold font-serif text-sky-700">
+              <h1 className="text-6xl hidden md:block font-extrabold font-serif text-sky-700">
                 ZSI
               </h1>
             </div>
@@ -59,10 +59,10 @@ const Banner = () => {
             <ul className="menu menu-horizontal px-1">{navLink}</ul>
           </div>
           <div className="navbar-end">
-            <button className="w-24 rounded-md py-2 border-2 border-black mr-4 shadow-lg shadow-[#fff] hover:scale-105 transform transition-transform duration-300 ease-in-out font-semibold">
+            <button className="w-24 rounded-md py-2 border-2 border-black mr-4 shadow-lg shadow-[#fff] hover:scale-105 transform transition-transform duration-300 ease-in-out font-semibold px-2 md:px-0">
               Register
             </button>
-            <button className="w-24 rounded-md py-2 border-2 border-black shadow-lg shadow-[#fff] hover:scale-105 transform transition-transform duration-300 ease-in-out font-semibold">
+            <button className="w-24 rounded-md py-2 border-2 border-black shadow-lg shadow-[#fff] hover:scale-105 transform transition-transform duration-300 ease-in-out font-semibold px-2 md:px-0">
               Login
             </button>
           </div>
@@ -71,8 +71,8 @@ const Banner = () => {
       {/* Navbar end */}
 
       {/* Banner Content*/}
-      <div className="w-[90%] mx-auto mt-6">
-        <h1 className="text-8xl font-bold uppercase text-gray-800">
+      <div className="w-full md:w-[90%] mx-auto mt-6">
+        <h1 className="text-4xl md:text-8xl font-bold uppercase text-gray-800">
           <span className="block mb-5">we help your</span>
           <span className="block mb-5">business grow</span>
           <span className="block mb-5">
