@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-    <div  className="w-full bg-gradient-to-r relative  from-sky-300 via-yellow-300 via-green-400 to-cyan-200 p-6  mt-[200px]">
+    <div  className="w-full bg-gradient-to-r relative  from-sky-300 via-yellow-300 via-green-400 to-cyan-200 p-6  ">
       {/*  positioning */}
       <div className="w-full md:w-3/4 h-[420px] absolute top-[-200px] right-2 md:right-24 flex flex-col md:flex-row-reverse items-center justify-between gap-5 bg-gradient-to-r from-sky-600 to-cyan-100 rounded-lg p-0 md:p-16"
       style={{ clipPath: 'polygon(96% 10%, 97% 63%, 6% 61%, 4% 29%)', overflow: 'hidden'}}
@@ -35,7 +35,7 @@ const Footer = () => {
       </div>
 
       <div className="flex items-center gap-3 mt-12">
-        <span className="text-6xl mb-3 text-sky-600">
+        <span className="text-8xl mb-3 text-sky-600">
           <GiSundial />
         </span>{" "}
         <h1 className="text-6xl font-extrabold text-sky-700 font-serif">ZSI</h1>

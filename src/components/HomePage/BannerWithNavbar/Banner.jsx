@@ -47,7 +47,7 @@ const Banner = () => {
               </ul>
             </div>
             <div className="flex items-center justify-center gap-3">
-              <span className="text-6xl mb-3 text-sky-700">
+              <span className="text-5xl md:text-8xl mb-3 text-sky-700">
                 <GiSundial />
               </span>{" "}
               <h1 className="text-6xl hidden md:block font-extrabold font-serif text-sky-700">
