@@ -9,13 +9,17 @@ const Services = () => {
   const axiosPublic = UsePublic();
   const {
     data: services = [],
-    refetch,
     isLoading,
   } = useQuery({
     queryKey: ["services"],
     queryFn: async () => {
-      const res = await axiosPublic.get("api?collection=services");
-      return res.data;
+       try{
+          const res = await axiosPublic.get("api?collection=services");
+          return res.data;
+       }catch(error){
+         console.log(error);
+         return [];
+       }
     },
   });
 

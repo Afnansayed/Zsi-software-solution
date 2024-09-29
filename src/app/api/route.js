@@ -1,3 +1,5 @@
+import { NextResponse } from "next/server";
+
 const { connectDB } = require("@/lib/connectDB")
 
 
@@ -21,12 +23,12 @@ export const GET = async (req) => {
             break;
 
             default :
-            return Response.json({error: 'Collection not found'} , {status: 404});
+            return NextResponse.json({error: 'Collection not found'} , {status: 404});
         }
         
-        return Response.json(result);
+        return NextResponse.json(result);
       }catch(error){
-        return Response.json({error: error.message} , {status: 500});
+        return NextResponse.json({error: error.message} , {status: 500});
       }
 
 }

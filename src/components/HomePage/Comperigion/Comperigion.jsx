@@ -9,11 +9,12 @@ const Comperigion = () => {
   const axiosPublic = UsePublic();
   useEffect(() => {
     try {
-      axiosPublic.get("/api?collection=comperision").then((res) => {
+        axiosPublic.get("/api?collection=comperision").then((res) => {
         setComperigionData(res.data);
       });
     } catch (error) {
       console.log(error);
+      return [];
     }
   }, []);
 
