@@ -2,9 +2,10 @@ import Image from "next/image";
 import React from "react";
 import { GiSundial } from "react-icons/gi";
 import image from '../../../../public/image/image-1.jpg'
-
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
+    <>
     <div  className="w-full bg-gradient-to-r relative  from-sky-300 via-yellow-300 via-green-400 to-cyan-200 p-6  mt-[200px]">
       {/*  positioning */}
       <div className="w-full md:w-3/4 h-[420px] absolute top-[-200px] right-2 md:right-24 flex flex-col md:flex-row-reverse items-center justify-between gap-5 bg-gradient-to-r from-sky-600 to-cyan-100 rounded-lg p-0 md:p-16"
@@ -40,6 +41,8 @@ const Footer = () => {
         <h1 className="text-6xl font-extrabold text-sky-700 font-serif">ZSI</h1>
       </div>
 
+
+       {/* foooter content */}
       <div className="flex flex-col md:flex-row justify-between ">
         <div className="w-full md:w-1/2">
           <h1 className="text-5xl md:text-8xl text-gray-800 font-bold text-left mt-6">
@@ -69,10 +72,22 @@ const Footer = () => {
               <h3 className="text-2xl "> 74-09 37th avenue suite 203B</h3>
               <h3 className="text-2xl mt-3"> Jackson height</h3>
             </div>
+
+            <div className="flex gap-4 mt-6">
+                 <span className="text-3xl text-sky-600"><FaFacebook /></span>
+                 <span className="text-3xl text-pink-600"><FaInstagram /></span>
+                 <span className="text-3xl text-sky-600"><FaTwitter /></span>
+            </div>
           </div>
         </div>
       </div>
+       
     </div>
+     <div className="bg-black flex justify-between p-2">
+      <p className="  text-gray-600">Trems & Conditions</p>
+      <p className="  text-gray-600">Copyright © 2022 ZSI. All rights reserved.</p>
+   </div>
+   </>
   );
 };
 
