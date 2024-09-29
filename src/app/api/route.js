@@ -14,7 +14,12 @@ export const GET = async (req) => {
             const comperisionCollection = db.collection('servicesComperision');
             result = await comperisionCollection.find().toArray();
             break;
-            
+
+            case 'services' :
+            const servicesCollection = db.collection('services');
+            result = await servicesCollection.find().toArray();
+            break;
+
             default :
             return Response.json({error: 'Collection not found'} , {status: 404});
         }
