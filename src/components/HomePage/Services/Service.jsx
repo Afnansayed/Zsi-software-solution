@@ -16,8 +16,8 @@ const Service = ({ service }) => {
     }, [controls, inView]);
   
     const boxVariants = {
-      hidden: { opacity: 0, x: 200 }, 
-      visible: { opacity: 1, x: 0, transition: { duration: 1 } }, 
+      hidden: { opacity: 0, x: "10vw" }, 
+      visible: { opacity: 1, x: "0vw", transition: { duration: 1 } }, 
     }; 
   return (
     <div className="card glass w-72 mx-auto mt-12 md:mt-16 relative">
@@ -27,7 +27,7 @@ const Service = ({ service }) => {
       initial="hidden"
       animate={controls}
       variants={boxVariants}
-      whileHover={{ scale: 1.1 , transition: { duration: 1 } }}
+      whileHover={{ scale: window.innerWidth < 640 ? 0.5 : 1.1, transition: { duration: 1 } }}
       >
          <Image
           className="w-[220px] h-[150px]" 
@@ -42,8 +42,8 @@ const Service = ({ service }) => {
         initial="hidden"
         animate={controls}
         variants={{
-          hidden: { opacity: 0, x: -200 }, 
-          visible: { opacity: 1, x: 0, transition: { duration: 3 }, delay: 2 }, 
+          hidden: { opacity: 0, x: '-10vw' }, 
+          visible: { opacity: 1, x: '0vw', transition: { duration: 3 }, delay: 2 }, 
         }}
         className="absolute -top-10 right-1">
           <button className="w-24 rounded-md py-2 text-gray-800 border-2 border-black shadow-lg shadow-[#fff] hover:scale-105 transform transition-transform duration-300 ease-in-out font-semibold ">Learn now!</button>

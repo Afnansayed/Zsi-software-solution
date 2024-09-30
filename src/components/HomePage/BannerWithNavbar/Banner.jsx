@@ -1,9 +1,7 @@
 "use client";
 import Nabvar from "@/components/sheared/navbar/Nabvar";
 import React from "react";
-import { GiSundial } from "react-icons/gi";
 import { TypeAnimation } from "react-type-animation";
-import logo  from '@/../public/image/logo-1.png'
 import Image from "next/image";
 
 const Banner = () => {

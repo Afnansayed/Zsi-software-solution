@@ -15,13 +15,13 @@ const Recomended = () => {
       }, [controls, inView]);
     
       const boxVariants = {
-        hidden: { opacity: 0, x: -200 }, 
-        visible: { opacity: 1, x: 0, transition: { duration: 1 } }, 
+        hidden: { opacity: 0, x: "-10vw" }, 
+        visible: { opacity: 1, x: "0vw", transition: { duration: 1 } }, 
       }; 
 
       const boxVariantsTwos = {
-        hidden: { opacity: 0, x: -200 }, 
-        visible: { opacity: 1, x: 0, transition: { duration: 3 , delay: 1 } }, 
+        hidden: { opacity: 0, x: "-10vw" }, 
+        visible: { opacity: 1, x: "0vw", transition: { duration: 3 , delay: 1 } }, 
       }; 
 
     return (
@@ -70,8 +70,8 @@ const Recomended = () => {
                   initial="hidden"
                   variants={
                      {
-                        hidden: { opacity: 0, x: 200 }, 
-                        visible: { opacity: 1, x: 1, transition: { duration: 1 } }, 
+                        hidden: { opacity: 0, x: "10vw" }, 
+                        visible: { opacity: 1, x: "0vw", transition: { duration: 1 } }, 
                       }
                   }
                  >

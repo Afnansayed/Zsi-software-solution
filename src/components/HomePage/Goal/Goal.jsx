@@ -15,8 +15,8 @@ const Goal = () => {
   }, [controls, inView]);
 
   const boxVariants = {
-    hidden: { opacity: 0, y:-200 },
-    visible: { opacity: 10, y: 0, transition: { duration: 1 , ease: "easeInOut" , delay: 1} },
+    hidden: { opacity: 0, y:"-20vh" },
+    visible: { opacity: 10, y: '0vh', transition: { duration: 1 , ease: "easeInOut" , delay: 1} },
   };
   return (
     <div className="flex flex-col md:flex-row p-8 md:p-16 py-6 md:py-24">
@@ -45,8 +45,8 @@ const Goal = () => {
           animate={controls}
           variants={
             {
-              hidden: { opacity: 0, y: 200 },
-              visible: { opacity: 1, y: 0, transition: { duration: 1.2 } },
+              hidden: { opacity: 0, y: "20vh" },
+              visible: { opacity: 1, y: "0vh", transition: { duration: 1.2 } },
             }
           }
         >
@@ -74,8 +74,8 @@ const Goal = () => {
           animate={controls}
           variants={
              {
-                hidden: { opacity: 0, y: 200 },
-                visible: { opacity: 1, y: 0, transition: { duration: 1.2 } },
+                hidden: { opacity: 0, y: "20vh" },
+                visible: { opacity: 1, y: "0vh", transition: { duration: 1.2 } },
               }
           }
           >
