@@ -27,7 +27,7 @@ const Comperigion = () => {
         </h2>
 
         {/* table */}
-        <div className="overflow-x-auto touch-pan-x">
+        <div className="overflow-x-auto">
           <table className="table">
             {/* head */}
             <thead>

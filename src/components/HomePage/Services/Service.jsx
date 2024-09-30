@@ -27,6 +27,7 @@ const Service = ({ service }) => {
       initial="hidden"
       animate={controls}
       variants={boxVariants}
+      whileHover={{ scale: 1.1 , transition: { duration: 1 } }}
       >
          <Image
           className="w-[220px] h-[150px]" 
