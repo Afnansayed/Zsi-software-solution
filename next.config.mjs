@@ -13,6 +13,12 @@ const nextConfig = {
                 port: '',
                 pathname: '/**',
             }
+              ,{
+                protocol: 'https',
+                hostname: 'zsi.ai', // You can keep this entry if needed
+                port: '',
+                pathname: '/**',
+            }
         ]
     }
 };

@@ -3,6 +3,8 @@ import Nabvar from "@/components/sheared/navbar/Nabvar";
 import React from "react";
 import { GiSundial } from "react-icons/gi";
 import { TypeAnimation } from "react-type-animation";
+import logo  from '@/../public/image/logo-1.png'
+import Image from "next/image";
 
 const Banner = () => {
   const navLink = (
@@ -48,11 +50,9 @@ const Banner = () => {
             </div>
             <div className="flex items-center justify-center gap-3">
               <span className="text-5xl md:text-8xl mb-3 text-sky-700">
-                <GiSundial />
+                <Image className="text-blue w-20  md:w-40 " src='https://zsi.ai/wp-content/uploads/2023/12/logo-1.png' alt="logo" width={100} height={100}/>
               </span>{" "}
-              <h1 className="text-6xl hidden md:block font-extrabold font-serif text-sky-700">
-                ZSI
-              </h1>
+              
             </div>
           </div>
           <div className="navbar-center hidden lg:flex">
