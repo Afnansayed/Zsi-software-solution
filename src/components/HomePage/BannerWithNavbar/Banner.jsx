@@ -59,10 +59,10 @@ const Banner = () => {
             <ul className="menu menu-horizontal px-1">{navLink}</ul>
           </div>
           <div className="navbar-end">
-            <button className="w-24 rounded-md py-2 border-2 text-gray-800 border-black mr-4 shadow-lg shadow-[#fff] hover:scale-105 transform transition-transform duration-300 ease-in-out font-semibold px-2 md:px-0">
+            <button className="w-24 rounded-md py-2 border-2 text-black border-black mr-4 shadow-lg shadow-[#fff] hover:scale-105 transform transition-transform duration-300 ease-in-out font-semibold px-2 md:px-0">
               Register
             </button>
-            <button className="w-24 rounded-md py-2 border-2 text-gray-800 border-black shadow-lg shadow-[#fff] hover:scale-105 transform transition-transform duration-300 ease-in-out font-semibold px-2 md:px-0">
+            <button className="w-24 rounded-md py-2 border-2 text-black border-black shadow-lg shadow-[#fff] hover:scale-105 transform transition-transform duration-300 ease-in-out font-semibold px-2 md:px-0">
               Login
             </button>
           </div>
