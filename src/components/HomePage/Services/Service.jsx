@@ -35,7 +35,7 @@ const Service = ({ service }) => {
       </motion.figure>
         <h2 className="text-md text-gray-800 font-semibold">{service?.service_name}</h2>
           <div className="h-32 ">
-            <p className="mt-3">{service?.service_details}</p>
+            <p className="mt-3 text-gray-900">{service?.service_details}</p>
           </div>
         <motion.div
         ref={ref}
@@ -46,7 +46,7 @@ const Service = ({ service }) => {
           visible: { opacity: 1, x: 0, transition: { duration: 3 }, delay: 2 }, 
         }}
         className="absolute -top-10 right-1">
-          <button className="w-24 rounded-md py-2 border-2 border-black shadow-lg shadow-[#fff] hover:scale-105 transform transition-transform duration-300 ease-in-out font-semibold ">Learn now!</button>
+          <button className="w-24 rounded-md py-2 text-gray-800 border-2 border-black shadow-lg shadow-[#fff] hover:scale-105 transform transition-transform duration-300 ease-in-out font-semibold ">Learn now!</button>
         </motion.div>
       </div>
     </div>
