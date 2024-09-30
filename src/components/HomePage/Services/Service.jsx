@@ -20,7 +20,7 @@ const Service = ({ service }) => {
       visible: { opacity: 1, x: 0, transition: { duration: 1 } }, 
     }; 
   return (
-    <div className="card glass w-full md:w-72  mt-12 md:mt-16 relative">
+    <div className="card glass w-72 mx-auto mt-12 md:mt-16 relative">
       <div className="card-body backdrop-blur-lg bg-white/10 rounded-xl ">
       <motion.figure
       ref={ref}
